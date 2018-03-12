@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annex Theatre: RFP 2019</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/rfp.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="../dist/jquery.validate.js"></script>
+	<script>
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#commentForm").validate();
+    </script>
+</head>
+    <body>
+        <nav id="sidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="rfp.html">Home</a>
+          <a href="submit.html">Submit</a>
+          <a href="faq.html">FAQ</a>
+          <a href="tips.html">Tips &amp; Tricks</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="wrapper"> 
+        <header>
+            <a href="rfp.html"><img id="logo1" src="images/AnnexLogo.png" alt="Annex Logo"></a>
+            <span style="font-size:20px;cursor:pointer;float:right;font-weight:900;background-color:#FC5C5C;padding:1.25em;margin-right:0" onclick="openNav()">&#9776; Menu</span>
+        </header>
+        <section id="contact">
+            <h1><a href="rfp.html" class="header">Annex Theatre RFP 2019</a></h1>
+            <div class="container">
+                <div style="text-align:left">
+                    <h2>Contact Us</h2>
+                </div>
+                <form class="cmxform" id="commentForm" method="get" action="http://www.growlingwillow.com/web150/rfp/success.html">
+                    <fieldset>
+                        <legend>Please provide your name, email address (won't be published) and a comment</legend>
+                        <p>
+                            <label for="cname">Name <small>(required, at least 2 characters)</small></label>
+                            <input id="cname" name="name" minlength="2" type="text" required>
+                        </p>
+                        <p>
+                            <label for="cemail">E-Mail <small>(required)</small></label>
+                            <input id="cemail" type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="curl">URL <small>(optional)</small></label>
+                            <input id="curl" type="url" name="url">
+                        </p>
+                        <p>
+                            <label for="ccomment">Your message <small>(required)</small></label><br />
+                            <textarea id="ccomment" name="comment" required></textarea>
+                        </p>
+                        <p>
+                            <input class="submit" type="submit" value="Submit">
+                        </p>
+                    </fieldset>
+                </form>
+                </div>
+        </section>
+        </div>
+        <footer>
+            <small>&copy; 2018 by Catherine Blake Smith. All Rights Reserved&nbsp;&mdash;&nbsp;<a href="http://validator.w3.org/check?uri=referer" target="_blank">Valid HTML</a>&nbsp;&mdash;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a><br />Photo by Joanna Kosinska from <a href="http://www.unsplash.com" target="_blank">Unsplash.com</a></small>
+        </footer>
+    <script src="js/rfp.js"></script>
+    </body>
+</html>
